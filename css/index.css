@@ -144,6 +144,7 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+  font-size: 4.8rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -155,10 +156,52 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+button {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.navBox {
+  background-color: rgba(246, 246, 246, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navBox .titleTxt {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.navBox .navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navBox .navList .navLink {
+  padding: 0 1.5rem 0 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  min-width: 6.5rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  color: #5E6164;
+}
+.navBox .navList .navLink:visited {
+  color: #5E6164;
 }
 footer {
   color: #22283B;
@@ -176,7 +219,8 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .intro img {
+.home .intro .mainHeaderImg {
+  margin-top: 14rem;
   border-radius: 7px;
 }
 .home .space-images {
@@ -214,6 +258,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border-radius: 0.7rem;
+  width: 33%;
+  padding: 1rem;
+  color: #F6F7F8;
+  background-color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

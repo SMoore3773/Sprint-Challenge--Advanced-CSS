@@ -1,1 +1,29 @@
 // Navigation code here
+.navBox {
+    background-color: fade(@nav-bg,90%);
+    .flex(column,center,center);
+    .paddingTB(1.5rem);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .titleTxt{
+        margin:auto;
+        .marginTB(2rem);
+    }
+    .navList{
+        .flex(row, center, center);
+        
+        .navLink {
+            color:@shuttle-gray;
+            .paddingLR(1.5rem);
+            .marginLR(1.5rem);
+            min-width: 6.5rem;
+            border-radius: 10rem;
+            .linkWipe();
+            &:visited {
+            color:@shuttle-gray;
+            }
+        
+        }
+    }
+}
