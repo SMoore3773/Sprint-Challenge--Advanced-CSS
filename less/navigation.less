@@ -18,10 +18,15 @@
             .paddingLR(1.5rem);
             .marginLR(1.5rem);
             min-width: 6.5rem;
-            border-radius: 10rem;
+            border-radius: 10rem;&:hover {
+                transition: 3s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                text-shadow: .1rem .1rem .5rem @link-color-hover;  
+              }
             .linkWipe();
             &:visited {
             color:@shuttle-gray;
+            
             }
             @media @phone{
                 .marginLR(.25rem);
