@@ -23,7 +23,16 @@
             &:visited {
             color:@shuttle-gray;
             }
-        
+            @media @phone{
+                .marginLR(.25rem);
+                .paddingTB(1.5rem);
+                .paddingLR(1.5rem);
+                .marginTB(.5rem);
+            }
         }
+    }
+    @media @phone {
+        .paddingTB(1rem);
+       
     }
 }
