@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website uses percentages instead of hard units for dimensions in css. This allows items on the page to grow and shrink as the window resizes. A responsive website uses media queries inside of the css to check on window size and adjust the actual css being used to display the page. A responsive site will display one set of css rules until a specified criteria has been met, and then it will use an additional set of css rules for once that criteria is met.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    A mobile first page is designed with the small screen size of a mobile device in mind, and then ```(min-width)``` media queries are used for additional display rules for when the window size grows. A desktop first design starts with a full sized desktop window first, and then uses ```(max-width)``` queries for different styling rules as the window shrinks.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Setting the font size to 62.5% will take the most common browser default font size and essentially make it 10px. This allows us to easily use rem units because instead of a base unit of 16 it changes it to a base of 10, meaning that any number we use with rems will be multiplied by 10, making using rems much more intuitive. For example: if we use 1.5rem for sizing text before we gave it a global multiplier, we would be essentially calling a size of 24px, that isn’t very easy to check at a glance, when we do have a global multiplier of 62.5% that same 1.5rem would be 15px; this is much more intuitive. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    A preprocessing css is using a program to generate css. It lets us write new syntax to accomplish the same results, but with much less effort, and allows us a more versatile style sheet. Using a preprocessor we can write snippets of code that can contain variables that we can use to change properties on our html more easily. It also lets us more easily organize our styling files so that we can keep things more intuitive, rather than a single monolithic css file.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+	My favorite concept is the mixin. I can set a class for a set of code that I use over and over again, and lets me put that code anywhere easily. I still need to work with implementing variables. I am still using values directly in my less styles, rather than setting the value as a variable, and then adding the variable to its own less file. Doing this will let me, or someone else, easily edit styles without having to look through all the less to find where they are.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

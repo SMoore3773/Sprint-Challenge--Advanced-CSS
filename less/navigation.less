@@ -1,1 +1,43 @@
 // Navigation code here
+.navBox {
+    background-color: fade(@nav-bg,90%);
+    .flex(column,center,center);
+    .paddingTB(1.5rem);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .titleTxt{
+        margin:auto;
+        .marginTB(2rem);
+    }
+    .navList{
+        .flex(row, center, center);
+        
+        .navLink {
+            color:@shuttle-gray;
+            .paddingLR(1.5rem);
+            .marginLR(1.5rem);
+            min-width: 6.5rem;
+            border-radius: 10rem;&:hover {
+                transition: 3s;
+                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                text-shadow: .1rem .1rem .5rem @link-color-hover;  
+              }
+            .linkWipe();
+            &:visited {
+            color:@shuttle-gray;
+            
+            }
+            @media @phone{
+                .marginLR(.25rem);
+                .paddingTB(1.5rem);
+                .paddingLR(1.5rem);
+                .marginTB(.5rem);
+            }
+        }
+    }
+    @media @phone {
+        .paddingTB(1rem);
+       
+    }
+}

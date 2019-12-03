@@ -1,1 +1,25 @@
 // Mixins Here
+.flex(@dir: row; @jus: space-between; @ali: center;) {
+    display:flex;
+    flex-direction: @dir;
+    justify-content: @jus;
+    align-items: @ali;
+}
+.marginTB(@mTB) {
+    margin-top:@mTB;
+    margin-bottom:@mTB;
+}
+.marginLR(@mLR) {
+    margin-left:@mLR;
+    margin-right:@mLR;
+}
+.paddingTB(@pTB) {
+    padding:@pTB 0 @pTB 0;
+}
+.paddingLR(@pLR) {
+    padding: 0 @pLR 0 @pLR;
+}
+.linkWipe() {
+    text-decoration: none;
+    color:@shuttle-gray
+}
